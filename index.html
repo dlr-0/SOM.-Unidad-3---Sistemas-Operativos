@@ -1,0 +1,172 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>SO · Unidad 3 — Estudio</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+<style>
+:root{--bg:#f4f6fb;--sf:#fff;--tx:#10162b;--mu:#566080;--bd:#dde2f0;--c1:#0a7f5d;--c2:#5a48e0;--c3:#b36b00;--ok:#0a7f5d;--ko:#d93a54;--r:14px;--m:'JetBrains Mono',ui-monospace,monospace;--f:'Space Grotesk',system-ui,sans-serif;--sh:0 8px 28px #1a2a6c1a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0a0e1a;--sf:#111830;--tx:#e8ecff;--mu:#8e98bd;--bd:#232c4d;--c1:#4ff0b0;--c2:#9b8cff;--c3:#ffb43b;--ok:#4ff0b0;--ko:#ff6b86;--sh:0 8px 28px #0009}}
+:root[data-theme=dark]{--bg:#0a0e1a;--sf:#111830;--tx:#e8ecff;--mu:#8e98bd;--bd:#232c4d;--c1:#4ff0b0;--c2:#9b8cff;--c3:#ffb43b;--ok:#4ff0b0;--ko:#ff6b86;--sh:0 8px 28px #0009}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px)}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 var(--f)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--bg) 72%,transparent);backdrop-filter:blur(16px)}
+.o{position:fixed;width:480px;height:480px;border-radius:50%;filter:blur(90px);opacity:.25;z-index:-1;pointer-events:none}.o1{background:var(--c1);top:-150px;right:-130px}.o2{background:var(--c2);bottom:-170px;left:-150px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:11;display:flex;gap:6px;align-items:center;padding:10px clamp(14px,4vw,40px);background:color-mix(in srgb,var(--bg) 72%,transparent);backdrop-filter:blur(16px);border-bottom:1px solid var(--bd);overflow-x:auto}
+.br{font:700 15px var(--m);color:var(--c1);margin-right:auto;white-space:nowrap}
+button{font:inherit;color:inherit;cursor:pointer}
+svg{width:16px;height:16px}
+.tb{background:none;border:1px solid transparent;border-radius:999px;padding:7px 14px;font:600 13px var(--m);color:var(--mu);white-space:nowrap;display:flex;gap:6px;align-items:center;transition:.2s}.tb:hover{color:var(--tx)}.tb.on{background:var(--c1);color:#06130e}
+:focus-visible{outline:2px solid var(--c2);outline-offset:2px}
+main{max-width:1040px;margin:0 auto;padding:28px clamp(14px,4vw,40px) 80px}
+.tab{display:none}.tab.on{display:block;animation:in .35s}@keyframes in{from{opacity:0;transform:translateY(8px)}}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center;margin-bottom:26px}
+.k{font:700 12px var(--m);color:var(--c2);letter-spacing:.1em;text-transform:uppercase}
+h1{font-size:clamp(36px,6.5vw,66px);line-height:1;margin:.15em 0 .3em;letter-spacing:-.03em}
+h1 em{font-style:normal;background:linear-gradient(100deg,var(--c1),var(--c2) 60%,var(--c3));-webkit-background-clip:text;background-clip:text;color:transparent}
+.mu{color:var(--mu)}
+.term{background:#0a0f1f;color:#9ff5d3;font:13px/1.9 var(--m);border-radius:var(--r);padding:16px 18px;box-shadow:var(--sh);border:1px solid #26305a}.term .r{display:flex;justify-content:space-between;gap:10px}
+.st{padding:0 8px;border-radius:6px;font-size:11px;transition:.3s}.s0{background:#4ff0b022;color:#4ff0b0}.s1{background:#ffb43b22;color:#ffb43b}.s2{background:#ff6b8622;color:#ff6b86}
+.bt{border:0;border-radius:12px;padding:11px 18px;font:700 14px var(--f);background:var(--c1);color:#06130e;display:inline-flex;gap:8px;align-items:center;transition:.2s;margin:4px 8px 4px 0}.bt:hover{transform:translateY(-2px);box-shadow:var(--sh)}.bt.bg{background:none;border:1px solid var(--bd);color:var(--tx)}.bt .ar{transition:transform .2s}.bt:hover .ar{transform:translateX(5px)}
+.pg{height:8px;border-radius:9px;background:var(--bd);overflow:hidden;margin:10px 0 4px}.pg i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--c1),var(--c2));transition:width .4s}
+.g1{--cc:var(--c1)}.g2{--cc:var(--c2)}.g3{--cc:var(--c3)}
+.gt{font:700 13px var(--m);text-transform:uppercase;letter-spacing:.08em;margin:32px 0 12px;color:var(--cc);display:flex;gap:10px;align-items:center}.gt::after{content:"";flex:1;height:1px;background:var(--bd)}
+.cd{background:var(--sf);border:1px solid var(--bd);border-left:4px solid var(--cc);border-radius:var(--r);margin-bottom:10px;transition:.2s}.cd:hover{box-shadow:var(--sh)}
+.cd summary{padding:14px 18px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between}.cd summary::-webkit-details-marker{display:none}
+.cd summary::after{content:"+";font:700 20px var(--m);color:var(--cc);transition:transform .2s}.cd[open] summary::after{transform:rotate(45deg)}
+.cd ul{margin:0;padding:0 18px 6px 36px}.cd li{margin:7px 0}.cd li b{color:var(--cc)}
+.dn{display:block;padding:8px 18px 14px;font:12px var(--m);color:var(--mu)}
+.qc,.fc{background:var(--sf);border:1px solid var(--bd);border-left:4px solid var(--c2);border-radius:var(--r);padding:22px;box-shadow:var(--sh)}
+.set{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-bottom:16px;font:13px var(--m)}
+select{font:inherit;background:var(--sf);color:var(--tx);border:1px solid var(--bd);border-radius:8px;padding:6px}
+.qh{display:flex;justify-content:space-between;font:12px var(--m);color:var(--mu)}
+.qt{font-size:19px;font-weight:600;margin:12px 0 14px}
+.op{display:block;width:100%;text-align:left;background:var(--bg);border:1px solid var(--bd);border-radius:12px;padding:12px 14px;margin:8px 0;transition:.15s}.op:hover:not(:disabled){border-color:var(--c2);transform:translateX(4px)}
+.op.ok{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 16%,transparent)}.op.ko{border-color:var(--ko);background:color-mix(in srgb,var(--ko) 16%,transparent)}.op.sel{border-color:var(--c2)}
+.ex{font-size:14px;color:var(--mu);margin:10px 0}
+.big{font:700 64px/1 var(--m);background:linear-gradient(100deg,var(--c1),var(--c3));-webkit-background-clip:text;background-clip:text;color:transparent}
+.rv{border-left:3px solid var(--ko);padding:4px 12px;margin:10px 0;font-size:14px}
+.fc{border-left-color:var(--c3);min-height:220px;display:grid;place-items:center;text-align:center;cursor:pointer;font-size:20px;margin-bottom:12px}.fc.f{animation:fl .3s}@keyframes fl{from{transform:rotateX(90deg)}}
+.fc small{display:block;font:12px var(--m);color:var(--mu);margin-bottom:8px}
+.ps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0}
+.pn{padding:20px 10px;text-align:center;border:1px solid var(--bd);border-radius:var(--r);background:var(--sf);font:700 14px var(--m);transition:.3s;opacity:.55}.pn.on{opacity:1;border-color:var(--c1);box-shadow:0 0 0 3px color-mix(in srgb,var(--c1) 30%,transparent);transform:translateY(-4px)}
+#lg{font:14px var(--m);color:var(--mu);margin-top:14px;min-height:3em}
+@media(max-width:760px){.hero,.ps{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style></head><body>
+<div class="o o1"></div><div class="o o2"></div>
+<nav><span class="br">$ so --unidad 3</span>
+<button class="tb on" data-t="estudio"><i data-lucide="book-open"></i>Estudio</button>
+<button class="tb" data-t="test"><i data-lucide="list-checks"></i>Test</button>
+<button class="tb" data-t="cards"><i data-lucide="layers"></i>Tarjetas</button>
+<button class="tb" data-t="lab"><i data-lucide="flask-conical"></i>Laboratorio</button>
+<button class="tb" id="th" aria-label="Cambiar tema"><i data-lucide="sun-moon"></i></button></nav>
+<main>
+<section id="estudio" class="tab on">
+<div class="hero"><div><div class="k">UD3 · 1º SMR · Sistemas Operativos Monopuesto</div><h1>Elementos, estructura y <em>funciones</em> del SO</h1>
+<p class="mu">Los 3 PDFs resumidos en desplegables, con test tipo examen, tarjetas y un simulador de procesos.</p>
+<button class="bt" data-go="test">Empezar test <i class="ar" data-lucide="arrow-right"></i></button><button class="bt bg" id="xa">Expandir / contraer todo</button></div>
+<div class="term" id="tm" aria-hidden="true"></div></div>
+<div class="pg"><i id="pb"></i></div><div class="mu" id="pt" style="font:12px var(--m)"></div>
+<div id="acc"></div></section>
+<section id="test" class="tab"><div class="set"><label>Preguntas <select id="nq"><option>10</option><option>20</option><option value="99">Todas</option></select></label><label><input type="checkbox" id="ex"> Modo examen (corrección al final)</label></div><div id="qa"></div></section>
+<section id="cards" class="tab"><p class="mu">Toca la tarjeta para ver la definición. Se generan a partir de todo el temario.</p><div class="fc" id="fc"></div><button class="bt" id="fn">Siguiente <i class="ar" data-lucide="arrow-right"></i></button><button class="bt bg" id="fs">Mezclar</button><span class="mu" id="fp" style="font:12px var(--m)"></span></section>
+<section id="lab" class="tab"><h2>Simulador de estados de un proceso</h2><p class="mu">Pulsa una transición. Solo es válida desde su estado de origen.</p>
+<div class="ps" id="ps"></div><div class="tr"><button class="bt bg" data-x="A">A · Preparado → Ejecución</button><button class="bt bg" data-x="B">B · Ejecución → Preparado</button><button class="bt bg" data-x="C">C · Ejecución → Bloqueado</button><button class="bt bg" data-x="D">D · Bloqueado → Preparado</button></div><div id="lg"></div></section>
+</main>
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const D=[
+["PDF 1 · Resumen de conceptos",1,[
+["Tipos de SO",["Lotes::procesos uno tras otro; el usuario no interactúa y el resultado no es inmediato.","Interactivos::el usuario interactúa; tiempo de respuesta pequeño.","Tiempo compartido::la CPU divide su tiempo entre procesos; cada uno cree ser el único.","Tiempo real::respuesta inmediata; un retraso tendría consecuencias graves.","Monousuario / Multiusuario::un usuario con todos los recursos / varios a la vez.","Monoprogramación / Multiprogramación::un programa cada vez / varios a la vez.","Monoproceso / Multiproceso::un procesador / varios; el multiproceso es simétrico o asimétrico.","Centralizado / En red / Distribuido::no usa recursos ajenos / comparte recursos por red / la red pasa desapercibida."]],
+["Estructura (arquitectura)",["Monolítico::sin estructura; conjunto de funciones interrelacionadas.","En capas::cada nivel tiene una función definida y solo interactúa con los adyacentes.","Máquina virtual::cada proceso ve una máquina idéntica a la real; deben ser multitarea.","Cliente-servidor::procesos servidores dan servicios a procesos clientes."]],
+["Funciones y seguridad",["Cinco funciones::gestión de procesos, memoria, E/S, archivos y seguridad lógica.","Seguridad lógica::mecanismos software: contraseñas, cifrado, antivirus, cortafuegos.","Seguridad física::cámaras, control de acceso al edificio.","BIOS/UEFI::firmware cargado desde ROM al arrancar; UEFI sustituye a la BIOS."]],
+["Procesos y planificación",["Proceso::programa en ejecución (de sistema o de usuario); su BCP guarda el PID, entero único.","Servicios::procesos que ofrecen una función a los usuarios.","Planificador::proceso del sistema que decide qué proceso de la lista de listos pasa a ejecución.","Envejecimiento::un proceso de poca prioridad gana prioridad mientras espera.","Tiempo de espera::tiempo en la lista de espera o listos.","Tiempo de respuesta::desde que el proceso llega hasta que termina.","Cambio de contexto::un proceso deja la CPU para que entre otro; debe ser muy rápido."]],
+["Conceptos de memoria",["Protección::evita que un proceso invada la memoria de otro o del SO.","Particionamiento::dividir la memoria para alojar varios procesos.","Intercambio::un proceso pasa de memoria principal a secundaria para dejar sitio a otro.","Compartición::varios procesos usan zonas comunes, de forma muy controlada.","Reubicación::un proceso puede volver a cargarse en otra zona distinta.","Memoria virtual::ejecutar programas no cargados del todo o mayores que la RAM.","Fragmentación::memoria libre inutilizable; interna o externa."]],
+["E/S y archivos",["Interrupción::señal hardware que pide atención; la trata una rutina de atención.","DMA::el periférico lee/escribe grandes datos en memoria sin ocupar la CPU.","Caching::guardar en caché los datos más usados o los adyacentes.","Buffering::área de memoria que hace de dispositivo lógico intermedio.","Spooling::permite simultanear entrada y salida con los periféricos.","Sistema de archivos::estructura que ordena la información en el almacenamiento.","Journaling::registra cambios del sistema de archivos para recuperar datos tras un fallo (sistemas transaccionales)."]]]],
+["PDF 2 · Sistemas Operativos",2,[
+["Hardware, software y arquitectura",["Sistema informático::elementos interrelacionados que tratan información automáticamente: hardware + software.","Hardware::básicos (procesador), periféricos (impresora, escáner) y puertos (conectan periféricos).","CPU::UC (lee, interpreta y ejecuta instrucciones), UAL (operaciones aritméticas y lógicas) y registros (memoria rápida y pequeña).","Memoria::guarda programa (instrucciones) y datos.","E/S::conecta periféricos; los datos viajan por los buses."]],
+["Software y lenguajes",["Programa::instrucciones ordenadas con una finalidad; se escriben en código fuente.","Lenguajes::máquina (0 y 1), ensamblador (símbolos; lo traduce el ensamblador) y alto nivel (C, Java, Cobol; se compila a ejecutable).","Clasificación::de sistema (administra recursos), de aplicación (tareas del usuario) y de programación (crear programas).","Software de sistema::SO + controladores (drivers) + programas utilitarios."]],
+["Arranque del ordenador",["Orden::corriente → BIOS → POST → sector de arranque (MBR) → gestor de arranque → SO.","POST::prueba vídeo, RAM, discos, teclado; los fallos (pitidos) son graves o no graves.","Final::el SO prepara la interfaz gráfica o el intérprete de comandos."]],
+["El SO: capas y modos",["SO::administra recursos, controla el hardware y da servicios a las aplicaciones; interfaz hombre-máquina.","Cualidades::interfaz de usuario, administración de recursos y servicio de soporte.","Capas::hardware → núcleo (kernel; único que toca el hardware) → aplicaciones (única visible). Programas portables.","Modo núcleo::privilegiado, acceso directo al hardware; solo parte del SO.","Modo usuario::sin acceso directo al hardware; lo usan las aplicaciones."]],
+["Funciones del SO",["Procesos::planificación, comunicación y sincronización.","Memoria principal::saber qué se usa y quién lo usa, decidir qué se carga, asignar y reclamar.","Archivos::almacenar y recuperar información en almacenamiento estable.","E/S::el driver conoce los detalles de cada dispositivo.","Otras::usuarios, errores, seguridad ante virus e intrusos, facilidad de evolución."]],
+["Evolución histórica",["1ª (1945-54)::válvulas de vacío, sin SO, lenguaje máquina.","2ª (1955-64)::transistor; primeros SO (701 de IBM, FMS) y procesamiento por lotes.","3ª (1965-80)::microchip; multiprogramación y tiempo compartido; OS/360 y MULTICS (fracasó, originó UNIX).","4ª (1981-hoy)::PC; DOS, Windows, UNIX, OS/2; redes, SO distribuidos, máquinas virtuales."]],
+["Interfaz, comandos y modos",["Interfaces::gráfica (ventanas) y de órdenes (Símbolo del sistema: Win+R → cmd).","Comandos::help, cls, dir /b, tasklist (procesos), systeminfo (memoria y recursos), driverquery (drivers), chkdsk /f C: (errores de disco), sfc /scannow (repara archivos del sistema).","Por lotes::antiguo, secuencial (batch), monoprogramación; archivo .bat.","Tiempo real (actual)::multiprogramación; CPU compartida; varios núcleos permiten multiproceso."]],
+["Procesos y hebras",["Programa vs proceso::programa = archivo en memoria secundaria; proceso = en ejecución, en memoria principal.","BCP::PID, estado, prioridad y posición de memoria.","Estados::ejecución, preparado/en espera y bloqueado (espera un evento o recurso).","Transiciones::A: Preparado→Ejecución (recibe CPU) · B: Ejecución→Preparado (agota su tiempo) · C: Ejecución→Bloqueado (necesita un recurso) · D: Bloqueado→Preparado (llega la señal).","Hebra (hilo)::subproceso con recursos propios que depende del proceso padre; comparten memoria, archivos y hardware (documentos de Word)."]],
+["Memoria, E/S y herramientas",["Memoria::mono o multiprogramación; memoria virtual (disco como RAM) y paginación. Linux: partición swap; Windows: archivo de paginación.","Objetivos E/S::independencia del dispositivo, manejo de errores, control de interrupciones y acceso concurrente (disco compartido, impresora exclusiva).","Interrupciones::el proceso espera Bloqueado la E/S; al acabar, interrupción y pasa a Listo. IRQ = Interrupt ReQuest.","Herramientas::Administrador de tareas, Información del sistema, Administrador de dispositivos (triángulo amarillo = fallo)."]],
+["SO actuales",["Windows::familia de Microsoft; Windows 10 desde julio de 2015.","macOS::basado en UNIX/BSD, de Apple desde 2002; Catalina (sept. 2019).","GNU/Linux::Linus Torvalds, abril de 1991, 21 años. Linux = núcleo; GNU = herramientas. Se reparte en distribuciones.","Software libre::4 libertades: ejecutar, estudiar y cambiar (código fuente), redistribuir, mejorar y publicar.","iOS::derivado de OS X (Darwin BSD); 29 junio 2007; iOS 13.","Android::kernel Linux, no 100 % libre, fragmentación; Samsung; 6 Marshmallow, 7 Nougat, 8 Oreo, 9 Pie, 10.","Requisitos mínimos::Win10 2 GB/20 GB/2 GHz · Win7 1 GB/16 GB/1 GHz · XP 64 MB/1,5 GB/233 MHz · macOS High Sierra 2 GB/14,3 GB/2 GHz · Ubuntu 19.4 2 GB/25 GB/2 GHz."]]]],
+["PDF 3 · Gestión de la memoria",3,[
+["Introducción y necesidades",["Memoria principal::casillero numerado (dirección); el contenido es la palabra. El proceso debe estar en RAM.","Protección::impedir el acceso a memoria de otro proceso; la vigila el procesador.","Reubicación::volver a RAM en otra posición; direcciones lógicas traducidas por hardware y SO.","Compartición::zona común, p. ej. DLL de Windows."]],
+["Esquemas contiguos",["Un solo proceso::monitor del SO + un proceso de usuario.","Particiones fijas::definidas antes de ejecutar. Ventaja: sencillas, poca sobrecarga. Límite de procesos activos y desperdicio en los pequeños. Intercambio (swapping) con el intercambiador; registro límite = protección.","Particiones variables::cambian de tamaño; tabla de zonas ocupadas; se unen huecos contiguos; mucha fragmentación → compactación (mover bloques a un extremo y unir los libres)."]],
+["Paginación y segmentación",["Paginación::memoria en marcos y procesos en páginas del mismo tamaño; no contiguas; acaba con la fragmentación.","Segmentación::segmentos lógicos de tamaño variable (identificador, inicio y tamaño); código de solo lectura; compartir código.","Combinada::cada segmento se divide en páginas."]],
+["Memoria virtual",["Idea::las partes sin usar viven en memoria secundaria; procesos mayores que la RAM.","Fallo de página::dirección no presente en RAM; se carga la página y el proceso queda Bloqueado.","Sustitución::sin marcos libres, un algoritmo elige la página que sale.","Hiperpaginación::demasiados fallos de página → muchos accesos a disco → el rendimiento cae."]]]]];
+const Q=[
+["¿Qué técnica reparte el tiempo de la CPU para que cada proceso crea ser el único?","Tiempo compartido","Procesamiento por lotes","Spooling","Compactación"],
+["SO donde la red pasa desapercibida y los recursos remotos se usan como locales:","Distribuido","En red","Centralizado","Monolítico"],
+["El multiproceso puede ser:","Simétrico o asimétrico","Interno o externo","Fijo o variable","Real o virtual"],
+["Estructura con niveles que solo interactúan con los adyacentes:","En capas","Monolítica","Cliente-servidor","Máquina virtual"],
+["SO que muestra a cada proceso una máquina idéntica a la real:","Máquina virtual","Monolítico","Centralizado","Por lotes","Debe ser multitarea."],
+["¿Cuál NO es función principal del SO?","Compilar el código fuente","Gestión de procesos","Gestión de archivos","Seguridad lógica"],
+["La estructura que guarda el PID de un proceso es:","El BCP (bloque de control de procesos)","El planificador","El buffer","El registro límite"],
+["Un proceso de baja prioridad que gana prioridad al esperar aplica:","Envejecimiento","Intercambio","Journaling","Caching"],
+["El tiempo de respuesta de un proceso es el que pasa:","Desde que llega hasta que termina","En la lista de listos","Bloqueado","Solo usando la CPU"],
+["El cambio de contexto es:","Que un proceso deje la CPU para que entre otro","Mover un proceso a disco","Ampliar la memoria virtual","Compactar la memoria"],
+["El journaling sirve para:","Registrar cambios y recuperar datos tras un fallo","Acelerar la CPU","Dividir la memoria en marcos","Cifrar el disco"],
+["El DMA permite que:","Un periférico acceda a memoria sin ocupar la CPU","La CPU ejecute dos procesos","Un proceso use más RAM de la real","Se cifren los datos"],
+["Un área de memoria que hace de dispositivo lógico intermedio es:","Buffering","Caching","Spooling","DMA"],
+["Orden correcto del arranque:","Corriente → BIOS → POST → MBR → gestor de arranque → SO","BIOS → corriente → gestor → POST → MBR → SO","Corriente → POST → BIOS → SO → MBR → gestor","SO → BIOS → POST → MBR → gestor"],
+["La única capa que interactúa directamente con el hardware es:","El núcleo (kernel)","Las aplicaciones","El intérprete de comandos","El planificador"],
+["Los programas de aplicación se ejecutan en modo:","Usuario","Núcleo","Supervisor","Privilegiado"],
+["Los estados de un proceso son:","Ejecución, preparado y bloqueado","Cargado, activo y finalizado","Nuevo, listo y suspendido","Lectura, escritura y espera"],
+["La transición C ocurre cuando:","El proceso en ejecución necesita un recurso y se bloquea","Agota su tiempo de CPU","Recibe la señal que esperaba","El planificador le da la CPU","A: Prep→Ejec · B: Ejec→Prep · C: Ejec→Bloq · D: Bloq→Prep."],
+["Pasa de Ejecución a Preparado (B) cuando:","Consume su tiempo y cede la CPU","Espera la impresora","Termina de leer del disco","Se crea una hebra"],
+["Las hebras de un proceso comparten:","Memoria, archivos y recursos hardware","Solo el PID","Solo la prioridad","Nada"],
+["Un programa reside en memoria ___ y un proceso en memoria ___","secundaria / principal","principal / secundaria","caché / virtual","virtual / caché"],
+["Comando de Windows que lista los procesos:","tasklist","driverquery","chkdsk","sfc"],
+["sfc /scannow sirve para:","Reparar archivos del sistema","Listar drivers","Corregir sectores del disco","Ver la memoria"],
+["chkdsk /f C: sirve para:","Encontrar errores y corregir sectores del disco","Listar procesos","Reparar archivos del sistema","Ver los drivers"],
+["En particiones fijas la protección se logra con:","Un registro límite","La compactación","Los marcos de página","El fallo de página"],
+["La compactación consiste en:","Mover los bloques asignados a un extremo y unir los huecos libres","Dividir procesos en páginas","Llevar procesos bloqueados a disco","Hacer segmentos de solo lectura"],
+["La paginación divide la memoria en ___ y los procesos en ___","marcos / páginas","páginas / marcos","segmentos / bloques","particiones / hebras"],
+["Cada segmento tiene:","Identificador, inicio y tamaño","Un tamaño fijo","Una página y un marco","Un PID y un BCP"],
+["Hay fallo de página cuando:","Se referencia una dirección que no está en memoria principal","Se supera el registro límite","La CPU se sobrecalienta","Se agota el disco"],
+["La hiperpaginación es:","Exceso de fallos de página que hunde el rendimiento","Compartir memoria entre procesos","Una técnica de compactación","Un tipo de partición fija"],
+["La memoria virtual usa en Linux ___ y en Windows ___","una partición swap / un archivo de paginación","la BIOS / el registro","el MBR / la caché","/home / el escritorio"],
+["¿Cuál NO es objetivo de la gestión de E/S?","Compactación","Independencia del dispositivo","Manejo de errores","Acceso concurrente"],
+["En GNU/Linux, Linux es ___ y GNU aporta ___","el núcleo / las herramientas","las herramientas / el núcleo","la interfaz / el kernel","la BIOS / los drivers"],
+["Linus Torvalds empezó el kernel de Linux en:","Abril de 1991, con 21 años","1981, en IBM","2002, en Apple","2007, con 30 años"],
+["Android usa kernel ___ y ___ es 100 % software libre","Linux / no","BSD / sí","Windows / no","UNIX propietario / sí"],
+["Multiprogramación y tiempo compartido llegan en la generación:","Tercera (microchip)","Primera (válvulas)","Segunda (transistor)","Cuarta (PC)"],
+["Desventaja de las particiones fijas:","Los procesos pequeños desperdician partición y los activos son pocos","Implementación compleja","Gran sobrecarga","No admiten intercambio"],
+["Un lenguaje de alto nivel se traduce a máquina mediante:","Compilación","Paginación","Journaling","Spooling"]];
+let h="",n=0,tot=0,done={};
+try{done=JSON.parse(localStorage.getItem("so3")||"{}")}catch(e){}
+D.forEach(([g,c,s])=>{h+=`<div class="gt g${c}">0${c} · ${g}</div>`;s.forEach(([t,b])=>{tot++;h+=`<details class="cd g${c}"><summary>${t}</summary><ul>${b.map(x=>{const [a,d]=x.split("::");return `<li><b>${a}:</b> ${d}</li>`}).join("")}</ul><label class="dn"><input type="checkbox" data-n="${n}" ${done[n]?"checked":""}> Ya lo domino</label></details>`;n++})});
+$("#acc").innerHTML=h;
+function prog(){const k=$$("[data-n]:checked").length;$("#pb").style.width=100*k/tot+"%";$("#pt").textContent=`${k}/${tot} secciones dominadas`;try{localStorage.setItem("so3",JSON.stringify(Object.fromEntries($$("[data-n]").map(e=>[e.dataset.n,e.checked])))) }catch(e){}}
+$$("[data-n]").forEach(e=>e.onchange=prog);prog();
+$("#xa").onclick=()=>{const a=$$(".cd"),o=a.some(d=>!d.open);a.forEach(d=>d.open=o)};
+function go(t){$$(".tab").forEach(s=>s.classList.toggle("on",s.id==t));$$(".tb[data-t]").forEach(b=>b.classList.toggle("on",b.dataset.t==t));scrollTo(0,0);if(t=="test"&&!cur.length)newTest()}
+$$("[data-t]").forEach(b=>b.onclick=()=>go(b.dataset.t));$$("[data-go]").forEach(b=>b.onclick=()=>go(b.dataset.go));
+$("#th").onclick=()=>{const d=document.documentElement,k=d.dataset.theme?d.dataset.theme=="dark":matchMedia("(prefers-color-scheme:dark)").matches;d.dataset.theme=k?"light":"dark"};
+const sh=a=>{a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a};
+let used=new Set(),cur=[],qi=0,sc=0,miss=[],ans=null;
+function newTest(pool){const N=+$("#nq").value;let av=pool||Q.map((_,i)=>i).filter(i=>!used.has(i));if(!pool&&av.length<Math.min(N,Q.length)){used.clear();av=Q.map((_,i)=>i)}cur=sh(av).slice(0,N);cur.forEach(i=>used.add(i));qi=0;sc=0;miss=[];show()}
+function show(){const el=$("#qa");if(qi>=cur.length){const p=Math.round(10*sc/cur.length*10)/10;el.innerHTML=`<div class="qc"><div class="qh"><span>RESULTADO</span></div><div class="big">${p}/10</div><p>${sc} de ${cur.length} correctas. ${p>=9?"Listo para el 10.":p>=5?"Aprobado: repasa las falladas.":"Vuelve al estudio y repite."}</p>${miss.map(i=>`<div class="rv"><b>${Q[i][0]}</b><br>Correcta: ${Q[i][1]}${Q[i][5]?"<br><i>"+Q[i][5]+"</i>":""}</div>`).join("")}<button class="bt" id="r1">Nuevo test con otras preguntas <i class="ar" data-lucide="arrow-right"></i></button>${miss.length?'<button class="bt bg" id="r2">Repasar falladas</button>':""}<button class="bt bg" id="r3">Repetir este test</button></div>`;$("#r1").onclick=()=>newTest();if(miss.length)$("#r2").onclick=()=>{const m=[...miss];newTest(m)};$("#r3").onclick=()=>newTest([...cur]);ic();return}
+const q=Q[cur[qi]],o=sh(q.slice(1,5)),exm=$("#ex").checked;ans=null;
+el.innerHTML=`<div class="qc"><div class="qh"><span>PREGUNTA ${qi+1}/${cur.length}</span><span>Aciertos: ${sc}</span></div><div class="pg"><i style="width:${100*qi/cur.length}%"></i></div><div class="qt">${q[0]}</div>${o.map(x=>`<button class="op">${x}</button>`).join("")}<div class="ex" id="xp"></div><button class="bt" id="nx" hidden>Siguiente <i class="ar" data-lucide="arrow-right"></i></button></div>`;ic();
+$$(".op").forEach(b=>b.onclick=()=>{if(ans!==null)return;ans=b.textContent;const ok=ans==q[1];if(ok)sc++;else miss.push(cur[qi]);
+if(exm){b.classList.add("sel");$$(".op").forEach(x=>x.disabled=true)}else{$$(".op").forEach(x=>{x.disabled=true;if(x.textContent==q[1])x.classList.add("ok")});if(!ok)b.classList.add("ko");$("#xp").textContent=(ok?"¡Correcto! ":"Era: "+q[1]+". ")+(q[5]||"")}
+$("#nx").hidden=false;$("#nx").focus()});
+$("#nx").onclick=()=>{qi++;show()}}
+const ic=()=>{try{lucide.createIcons()}catch(e){}};
+let dk=[],di=0,fl=false;
+const pairs=D.flatMap(g=>g[2].flatMap(s=>s[1].map(x=>x.split("::"))));
+function card(){const p=dk[di],e=$("#fc");e.innerHTML=fl?`<div><small>DEFINICIÓN</small>${p[1]}</div>`:`<div><small>TÉRMINO</small><b>${p[0]}</b></div>`;e.classList.remove("f");void e.offsetWidth;e.classList.add("f");$("#fp").textContent=` ${di+1}/${dk.length}`}
+function mix(){dk=sh(pairs);di=0;fl=false;card()}
+$("#fc").onclick=()=>{fl=!fl;card()};$("#fn").onclick=()=>{di=(di+1)%dk.length;fl=false;card()};$("#fs").onclick=mix;mix();
+const N=["Preparado","Ejecución","Bloqueado"],X={A:[0,1,"el planificador le concede la CPU"],B:[1,0,"agotó su tiempo y cede la CPU"],C:[1,2,"necesita un recurso o dato y se bloquea"],D:[2,0,"llegó la señal que esperaba"]};let ps=0;
+function rp(){$("#ps").innerHTML=N.map((x,i)=>`<div class="pn${i==ps?" on":""}">${x}</div>`).join("")}rp();$("#lg").textContent="El proceso empieza en Preparado.";
+$$("[data-x]").forEach(b=>b.onclick=()=>{const k=b.dataset.x,t=X[k];if(ps==t[0]){ps=t[1];$("#lg").textContent=`✔ Transición ${k}: ${t[2]}. Ahora: ${N[ps]}.`}else $("#lg").textContent=`✘ La transición ${k} parte de ${N[t[0]]}, pero el proceso está en ${N[ps]}.`;rp()});
+const T=["firefox","notepad","svchost","word"];let tk=0;
+function rt(){$("#tm").innerHTML="<div>$ tasklist</div>"+T.map((x,i)=>{const s=(i+tk)%3;return `<div class="r"><span>${1000+i*137} ${x}</span><span class="st s${s}">${N[s]}</span></div>`}).join("")}rt();
+if(!matchMedia("(prefers-reduced-motion:reduce)").matches)setInterval(()=>{tk++;rt()},1800);
+ic();
+</script></body></html>
